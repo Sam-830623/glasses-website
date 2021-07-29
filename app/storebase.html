@@ -1,0 +1,104 @@
+---
+title: 門市據點
+layout: ./app/layout.ejs
+engine: ejs
+current: storebase
+---
+
+
+<div class="store-base">
+    <div class="container">
+        <h2><span>門市據點</span></h2>
+        <div class="stobase-select">
+            <h4><span>選擇地區</span></h4>
+            <select>
+                <!-- 再想辦法把第一排設定有顏色  一直沒反應!!!!!-->
+                <!-- <option class="option-firstline" value="請選擇你最愛的寵物">請選擇你最愛的寵物</option> -->
+                <option>台北中山旗艦店</option>
+                <option>台中成功旗艦店</option>
+                <option>雲林土庫旗艦店</option>
+                <option>高雄六合旗艦店</option>
+                <option>花蓮吉安旗艦店</option>
+            </select>
+        </div>
+        <ul class="storebase-content">
+            <li>
+                <div class="storebase-card">
+                    <!-- 這排圖片該如何處理 因為當變到768px時 圖片會變形 -->
+                    <img class="storebase-pictop" src="./assets/images/storebase-img/locate1.jpeg" alt="台北中山旗艦店">
+                    <h3><span>台北中山旗艦店</span></h3>
+                    <div class="storebase-detail">
+                        <p><img src="./assets/images/storebase-img/phone_black_24dp.svg" alt="台北中山旗艦店電話">電話：(02)000-1234</p>
+                        <p><img src="./assets/images/storebase-img/icon-clock-black.svg" alt="台北中山旗艦店營業時間">營業時間：10:00-21:00
+                        </p>
+                        <p><img src="./assets/images/storebase-img/location_on_black_24dp.svg"
+                                alt="台北中山旗艦店地點">地址：台北市中山區南京東路25巷2-1號</p>
+                    </div>
+                    <p class="detail-inforemation"><a href="./TP-store-information.html">詳細資訊</a></p>
+                </div>
+            </li>
+
+            <li>
+                <div class="storebase-card">
+                    <img class="storebase-pictop" src="./assets/images/storebase-img/locate2.jpg" alt="台中成功旗艦店">
+                    <h3><span>台中成功旗艦店</span></h3>
+                    <div class="storebase-detail">
+                        <p><img src="./assets/images/storebase-img/phone_black_24dp.svg" alt="台中成功旗艦店電話">電話：(04)222-1254</p>
+                        <p><img src="./assets/images/storebase-img/icon-clock-black.svg" alt="台中成功旗艦店營業時間">營業時間：10:00-22:00
+                        </p>
+                        <p><img src="./assets/images/storebase-img/location_on_black_24dp.svg"
+                                alt="台中成功旗艦店地點">地址：台中市成功區旱溪西路一段300號</p>
+                    </div>
+                    <p class="detail-inforemation"><a href="./TC-store-information.html">詳細資訊</a></p>
+                </div>
+            </li>
+
+            <li>
+                <div class="storebase-card">
+                        <img class="storebase-pictop" src="./assets/images/storebase-img/locate3.jpg" alt="雲林土庫旗艦店">
+                        <h3><span>雲林土庫旗艦店</span></h3>
+                        <div class="storebase-detail">
+                            <p><img src="./assets/images/storebase-img/phone_black_24dp.svg" alt="雲林土庫旗艦店電話">電話：(03)666-1234
+                            </p>
+                            <p><img src="./assets/images/storebase-img/icon-clock-black.svg"
+                                    alt="雲林土庫旗艦店營業時間">營業時間：08:00-17:00</p>
+                            <p><img src="./assets/images/storebase-img/location_on_black_24dp.svg"
+                                    alt="雲林土庫旗艦店地點">地址：雲連縣土庫鎮光明路302號之6</p>
+                        </div>
+                        <p class="detail-inforemation"><a href="./YL-store-information.html">詳細資訊</a></p>
+                </div>
+            </li>
+
+            <li>
+                <div class="storebase-card">
+                    <img class="storebase-pictop" src="./assets/images/storebase-img/locate4.jpg" alt="高雄六合旗艦店">
+                    <h3><span>高雄六合旗艦店</span></h3>
+                    <div class="storebase-detail">
+                        <p><img src="./assets/images/storebase-img/phone_black_24dp.svg" alt="高雄六合旗艦店電話">電話：(07)056-1834</p>
+                        <p><img src="./assets/images/storebase-img/icon-clock-black.svg" alt="高雄六合旗艦店營業時間">營業時間：09:00-18:00
+                        </p>
+                        <p><img src="./assets/images/storebase-img/location_on_black_24dp.svg"
+                                alt="高雄六合旗艦店地點">地址：高雄市新興區六合二路14號之10-3</p>
+                    </div>
+                    <p class="detail-inforemation"><a href="./KS-store-information.html">詳細資訊</a></p>
+                </div>
+            </li>
+
+            <li>
+                <div class="storebase-card">
+                    <img class="storebase-pictop" src="./assets/images/storebase-img/locate5.jpg" alt="花蓮吉安旗艦店">
+                    <h3><span>花蓮吉安旗艦店</span></h3>
+                    <div class="storebase-detail">
+                        <p><img src="./assets/images/storebase-img/phone_black_24dp.svg" alt="花蓮吉安旗艦店">電話：(05)888-1215</p>
+                        <p><img src="./assets/images/storebase-img/icon-clock-black.svg" alt="花蓮吉安旗艦店營業時間">營業時間：10:00-21:00
+                        </p>
+                        <p><img src="./assets/images/storebase-img/location_on_black_24dp.svg"
+                                alt="花蓮吉安旗艦店地點">地址：花蓮市區吉安鄉廣豐路126號</p>
+                    </div>
+                    <p class="detail-inforemation"><a href="./YL-east-store-information.html">詳細資訊</a></p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>

@@ -1,0 +1,352 @@
+/* 最上面的menu */
+.SF-menu{
+    display: flex;
+}
+
+/* .d-b{
+    display: block;
+} */
+
+.SF-menu li{
+    width: 370px;
+    height: 96px;
+    text-align: center;
+    border: 1px solid #DCDCDC;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 96px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* menu HOVER時的線條 !!!!!!!!*/
+.SF-menu li:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #AA0601;
+    height: 8px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.SF-menu li:hover:before, .SF-menu li:focus:before, .SF-menu li:active:before {
+    right: 0;
+  }
+
+
+.SF-menu li a{
+    /* display: block; */
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SF-menu li img{
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+/* SF-banner */
+.SFbanner-pic2{
+    width: 100%;
+    display: flex;
+}
+
+.SFbanner-pic2 img{
+    width: 960px;
+    height: 304px;
+    object-fit: cover;
+}
+
+/* 鏡框裡面內容 */
+.SF-content{
+    margin: 80px 0 160px;
+}
+.SF-content h2{
+    font-size: 42px;
+    line-height: 63px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.SF-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.OP-product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.OP-product img{
+    width: 100%;
+    height: 164px;
+    object-fit: cover;
+}
+
+.OP-product li{
+    width: 22%;
+    margin-right: 30px;
+    margin-bottom: 104px;
+}
+
+.OP-product li:nth-child(4n){
+    margin-right: 0;
+}
+
+.OP-product li:nth-child(3){
+    margin-bottom: 96px;
+}
+
+.OP-product li:last-child{
+    margin-right: 0;
+}
+
+.OP-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.OP-text h4{
+    font-size: 24px;
+}
+
+.OP-price{
+    font-size: 24px;
+    color: #AA0601;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 偽元素去寫的box */
+/* https://w3c.hexschool.com/blog/5667df85 偽元素參考 */
+.OP-box{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: #5F3E2D;
+    border-radius: 4px;
+}
+
+.OP-box::before{
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: #B75929;
+    border-radius: 4px;
+    top: 0;
+    right: -32px;
+}
+
+/* 最下面的pages */
+.pages{
+    display: flex;
+    justify-content: center;
+}
+.pages a{
+    font-size: 18px;
+    line-height: 27px;
+    color: #555555;
+    border: 0.5px solid #555555;
+    padding: 12px 16px;
+}
+
+.pages a:hover{
+    background: #000;
+    color: #fff;
+}
+
+.pages .bg-grey{
+    background-color: #F2F2F2;
+}
+
+
+@media(max-width:1110px){
+    .OP-product li{
+        width: 30%;
+    }
+    .OP-product li:nth-child(4n){
+        margin-right: 30px;
+    }
+    .OP-product li:nth-child(3n){
+        margin-right: 0;
+    }
+}
+
+@media(max-width:860px){
+    .SF-menu{
+        justify-content: center;
+    }
+    .SF-menu li{
+        width: 230px;
+        height: 60px;
+        font-size: 24px;
+    }
+    .SF-menu li img{
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media(max-width:768px){
+    .SF-content{
+        margin: 56px 0 96px;
+    }
+    .SF-content h2{
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .SF-content h3{
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    .OP-product li{
+        width: 330px;
+        margin-bottom: 72px;
+    }
+    .OP-product li:nth-child(4n){
+        margin-right: 0;
+    }
+    .OP-product li:nth-child(even){
+        margin-right: 0;
+    }
+    .OP-product li:nth-child(odd){
+        margin-right: 30px;
+    }
+    .OP-product li:nth-child(3){
+        margin-bottom: 65px;
+    }
+    .OP-text h4{
+        line-height: 30px;
+    }
+    .OP-price{
+        line-height: 30px;
+    }
+}
+
+@media(max-width:767px){
+    .OP-product li{
+        width: 47%;
+    }
+}
+
+@media(max-width:685px){
+    .SF-menu li{
+        font-size: 16px;
+        width: 150px;
+        height: 30px;
+    }
+    .SF-menu li img{
+        width: 16px;
+        height: 16px;
+    }
+    .SFbanner-pic2 img{
+        height: 280px;
+    }
+}
+
+@media(max-width:576px){
+    .SFbanner-pic2 img{
+        height: 240px;
+    }
+    .OP-product li{
+        width: 95%;
+        margin-bottom: 32px;
+    }
+    .OP-product li:nth-child(odd){
+        margin-right: 0;
+    }
+    .OP-text h4{
+        font-size: 16px;
+    }
+    .OP-price{
+        font-size: 16px;
+    }
+    .OP-box{
+        width: 16px;
+        height: 16px;
+    }
+    .OP-box::before{
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: -20px;
+    }
+}
+
+@media(max-width:474px){
+    .SF-menu li{
+        width: 200px;
+    }
+    .SF-menu li img{
+        margin-right: 0;
+    }
+    .SFbanner-pic2 img{
+        height: 200px;
+    }
+    .pages a{
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+}
+
+@media(max-width:375px){
+    .SF-content{
+        margin: 32px 0 56px;
+    }
+    .SFbanner-pic2 img{
+        height: 148px;
+    }
+    .SF-content h2{
+        font-size: 20px;
+    }
+    .SF-content h3{
+        font-size: 16px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    .OP-product li{
+        width: 100%;
+    }
+    .OP-product img{
+        height: 166px;
+    }
+
+}
+
+@media(max-width:375px){
+    .SF-menu li img{
+        display: none;
+    }
+    .OP-product li:nth-child(3){
+        margin-bottom: 40px;
+    }
+    .d-n{
+        display: none;
+    }
+}
+
+@media(max-width:324px){
+    .pages-dn .pages a{
+        padding: 6px 4px;
+    }
+}

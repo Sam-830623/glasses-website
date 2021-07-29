@@ -1,23 +1,25 @@
-$color: #00cc99;
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+// reset
+@import "reset.scss";
+// 大家都會用到的css
+@import "style.scss";
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
+// 首頁需要用的scss
+@import "index.scss";
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+// 系列鏡框
+@import "seriesframe-OP";
+@import "seriesframe-SG";
+
+//門市據點
+@import "_storebase.scss";
+@import "_store-information.scss";
+
+//部落格
+@import "glass-blog";
+@import "VTspecial-blog";
+
+//常見問題
+@import "_commonproblem.scss"
+
+

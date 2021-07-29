@@ -1,0 +1,342 @@
+/* 全部都需要套用的CSS */
+
+
+/* 全部套用 */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+
+    
+    /*思源黑體 */
+    font-family: '思源黑體','ROBOTO','Noto Sans TC', '微軟正黑體', sans-serif;
+    /* 會第一順位思源黑體 第二順位roboto 如果找不到字體就會到第二個 以此類推*/
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+
+/* header & footer */
+/* header */
+.header{
+    background-color: #AA0601;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 88px;
+}
+
+.logo{
+    width: 80px;
+    height: 48.57px;
+    background-image: url(../images/glasses-logo.png);
+    background-position: center;
+    background-size: cover;
+    /* 這邊要記熟 */
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.logo a{
+    display: block;
+}
+
+.menu{
+    display: flex;
+    font-size: 20px;
+    padding: 30px 0;
+}
+
+.menu li{
+    margin-right: 64px;
+}
+
+.menu li:last-child{
+    margin-right: 0;
+}
+
+.menu li a{
+    color: white;
+}
+
+.menu li a:hover{
+    font-size: 22px;
+    font-weight: 800;
+}
+
+/* 沒辦法最右邊不要mr? */
+/* .menu li a:last-child{
+    margin-right: 0;
+} */
+
+
+
+/* footer */
+.footer{
+    background-color: #AA0601;
+    color: white;
+}
+
+.footer-inner{
+    padding: 32px 0 39px;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menu{
+    display: flex;
+}
+
+.footer-menu a{
+    color: white;
+}
+
+.footer-menu a:hover{
+    font-size: 18px;
+}
+
+.footer-menu li{
+    margin-right: 48px;
+}
+
+.footer-menu li:last-child{
+    margin-right: 0;
+}
+
+.footer-icon{
+    display: flex;
+}
+
+.footer-icon img{
+    width: 48px;
+    height: 48px;
+}
+
+.footer-icon li{
+    margin-left: 32px;
+}
+
+.footer-icon li:first-child{
+    margin-left: 0;
+}
+
+.footer-middle{
+    padding: 32px 0 24px;
+}
+
+.footer-middle a{
+    display: flex;
+    font-size: 36px;
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 36px/54px Roboto;
+    color: white;
+}
+
+.footer-middle img:first-child{
+    width: 40px;
+}
+
+.footer-middle span{
+    padding-left: 22px;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 32px;
+}
+
+.footer-copyright{
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 36px/54px Roboto;
+}
+
+.footer-servicelist{
+    display: flex;
+}
+
+.footer-servicelist a{
+    color: white;
+}
+
+.footer-servicelist li:first-child{
+    margin-right: 48px;
+}
+
+
+/* RWD 共同的 header footer*/
+@media(max-width:1110px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 39px;
+    }
+}
+
+@media(max-width:800px){
+    .footer-icon img{
+        width: 24px;
+        height: 24px;
+    }
+    .footer-middle a{
+        font-size: 20px;
+    }
+    .footer-middle img:first-child{
+        width: 24px;
+        height: 24px;
+    }
+    .footer-middle span{
+        padding-left: 10px;
+    }
+}
+
+@media(max-width:768px){
+    .header{
+        padding: 0 39px;
+    }
+    .menu li{
+        margin-right: 40px;
+    }
+    .menu li a:hover{
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .footer-menu a:hover{
+        font-size: 16px;
+    }
+}
+@media(max-width:688px){
+    .footer-menu li{
+        margin-right: 24px;
+    }
+}
+@media(max-width:610px){
+    .footer-servicelist li:first-child{
+        margin-right: 24px;
+    }
+}
+@media(max-width:600px){
+    .menu li{
+        margin-right: 25px;
+    }
+}
+@media(max-width:585px){
+    .footer-menu{
+        display: none;
+    }
+    .footer-toptop{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .footer-bottom{
+        justify-content: unset;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .footer-servicelist{
+        display: unset;
+    }
+}
+@media(max-width:576px){
+    .menu li{
+        margin-right: 20px;
+    }
+}
+@media(max-width:530px){
+    .header{
+        flex-direction: column;
+        height: unset;
+        padding: 0 0;
+    }
+    .logo{
+        width: 48px;
+        height: 29.14px;
+        margin: 10px 0;
+        
+    }
+    .menu{
+        width: 100%;
+        line-height: 29px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 0;
+    }
+    .menu li{
+        width: 50%;
+        margin-right: 0;
+        text-align: center;
+        padding: 7px 0;
+        border-top: 2px solid #fff;
+    }
+    .menu li:nth-child(2){
+        border-left: 2px solid #fff;
+    }
+    .menu li:last-child{
+        border-left: 2px solid #fff;
+    }
+    .menu li a{
+        display: block;
+    }
+}
+@media(max-width:480px){
+    .footer-middle a{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .footer-copyright{
+        margin-bottom: 8px;
+    }
+    .footer-servicelist li{
+        margin-bottom: 8px;
+    }
+}
+@media(max-width:414px){
+    .container{
+        padding:0 15px;
+    }
+    .footer-inner{
+        padding: 25px 0 24px;
+    }
+    .footer-top{
+        align-items: flex-start;
+    }
+    .footer-middle{
+        padding: 0 0 24px;
+    }
+    .footer-bottom{
+        padding-top: 16px;
+    }
+}
+@media(max-width:320px){
+    .footer-toptop{
+        display: unset;
+    }
+    .footer-icon{
+        margin-bottom: 8px;
+    }
+}
+
+
+

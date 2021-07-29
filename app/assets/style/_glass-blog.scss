@@ -1,0 +1,359 @@
+/* 這邊的768px太尷尬太醜 我只好改成這樣了 */
+
+
+/* blog-menu */
+.glassblog-nav{
+    background-color: #650300;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-navinner{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.blog-menu{
+    display: flex;
+}
+
+.blog-menu a{
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    // margin-right: 48px;
+    display: block;
+}
+
+/* 最上面列表的hover */
+.blog-menu a:hover{
+    background-color: white;
+    color: #650300;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.glassblog{
+    margin: 40px 0 160px;
+}
+
+.glassblog h2{
+    font-size: 48px;
+    line-height: 80px;
+    font-weight: 900;
+    border-left: 8px solid #9F1213;
+    height: 70px;
+    padding-left: 16px;
+    margin-bottom: 60px;
+}
+
+
+.blog-inner{
+    display: flex;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.blog-inner:last-child{
+    margin-bottom: 0;
+}
+
+.blog-innerimg{
+    /* width: 58%; */
+    width: 635px;
+    margin-right: 30px;
+}
+
+.blog-innerimg img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* 右邊的文字 */
+.blog-text{
+    width: 40%;
+}
+
+.blogtext-top{
+    margin-bottom: 24px;
+}
+
+
+/* 不能這樣寫  因為都放在一起的話 全部class都會放在一起會覆蓋掉 所以最好方法是前面寫自定class再h3比較好 */
+.blog-text h3{
+    font-size: 32px;
+    line-height: 63px;
+    font-weight: 800;
+    color:#650300;
+}
+
+.blog-text h3 a{
+    color: #650300;
+}
+
+.blog-subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-subtitle h4{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.blog-subtitle h5{
+    font-size: 16px;
+    color: rgba(85,85,85,0.7);
+}
+
+.blog-subtitle h4 a{
+    color: black;
+}
+
+.blog-subtitle h5 a{
+    color: rgba(85,85,85,0.7);
+}
+
+/* 做這個是為了讓more可以到底 */
+.blogtext-bottom{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* 只能先用19 不然太多會超出 */
+.blogtext-bottom p{
+    /* font-size: 20px; */
+    font-size: 19px;
+    color: #555555;
+}
+
+.blogtext-bottom p a{
+    color: #555555;
+}
+
+/* more */
+/* 有沒有更好辦法讓more靠到最底?*/
+.blogtext-bottom span{
+    font-size: 36px;
+    font-weight: 900;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.blogtext-bottom span a{
+    color:#650300;
+}
+
+/* 最下面的pages */
+.pages{
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+}
+.pages a{
+    font-size: 18px;
+    line-height: 27px;
+    color: #555555;
+    border: 0.5px solid #555555;
+    padding: 12px 16px;
+}
+
+.pages a:hover{
+    background: #000;
+    color: #fff;
+}
+
+.pages .bg-grey{
+    background-color: #F2F2F2;
+}
+
+
+
+@media(max-width:1110px){
+    .blog-innerimg{
+        width: 63%;
+    }
+    .blog-innerimg img{
+        height:unset; 
+    }
+    .blog-text{
+        width: 37%;
+    }
+    .blogtext-bottom p{
+        font-size: 18px;
+    }
+    .blogtext-bottom span{
+        font-size: 26px;
+    }
+}
+
+@media(max-width:1012px){
+    .blog-innerimg{
+        width: 53%;
+    }
+    .blog-text{
+        width: 45%;
+    }
+    .blogtext-bottom p{
+        font-size: 16px;
+    }
+    .blogtext-bottom{
+        height: unset;
+    }
+}
+
+@media(max-width:980px){
+    .blog-text h3{
+        font-size: 28px;
+    }
+    .blog-subtitle h4{
+        font-size: 18px;
+    }
+    .blogtext-bottom span{
+        font-size: 20px;
+        position: relative;
+        bottom: 26px;
+    }
+    
+    .blogtext-bottom span a{
+        color: #555555;
+
+        /* MORE變成more!!!!!!! */
+        text-transform: lowercase;
+    }
+    
+}
+
+@media(max-width:909px){
+    .blog-text h3{
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .blogtext-bottom span{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:879px){
+    .blogtext-bottom span{
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+@media(max-width:817px){
+    .blog-menu li{
+        margin-right: 32px;
+    }
+}
+
+@media(max-width:768px){
+    .blog-menu a{
+        font-size: 16px;
+        // margin-right: 32px;
+    }
+    .glassblog{
+        margin: 32px 0 96px;
+    }
+    .glassblog h2{
+        margin-bottom: 32px;
+    }
+    .blog-subtitle h4{
+        font-size: 16px;
+    }
+    .blogtext-top{
+        margin-bottom: 12px;
+    }
+    .blog-innerimg img{
+        height: 92%;
+    }
+}
+
+@media(max-width:687px){
+    .blog-menu li{
+        font-size: 16px;
+        margin-right: 32px;
+    }
+}
+
+@media(max-width:630px){
+    .blog-inner{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .blog-innerimg{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+    .blog-text{
+        width: 100%;
+    }
+    .blog-subtitle h5{
+        color: #000;
+    }
+    .blog-subtitle h5 a{
+        color: #000;
+    }
+}
+
+@media(max-width:501px){
+    .blog-navinner{
+        display: none;
+    }
+}
+
+@media(max-width:481px){
+    .blog-menu li{
+        margin-right: 12px;
+    }
+}
+
+@media(max-width:474px){
+    .pages a{
+        font-size: 17px;
+        padding: 10px 12px;
+    }
+}
+
+@media(max-width:414px){
+    .glassblog{
+        margin: 28px 0 56px;
+    }
+    .glassblog h2{
+        font-size: 28px;
+        margin-bottom: 28px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .blogtext-bottom{
+        display: none;
+    }
+}   
+
+@media(max-width:375px){
+    .glassblognavv .blog-navinner{
+        display: none;
+    }
+    .blog-text h3{
+        font-size: 18px;
+    }
+    .blog-subtitle h4{
+        font-size: 16px;
+    }
+    
+}
+
+@media(max-width:361px){
+    .pages a{
+        font-size: 16px;
+        padding: 10px 8px;
+    }
+}

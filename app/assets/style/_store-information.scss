@@ -1,0 +1,260 @@
+/* 門市據點裡面更細項 */
+
+/* 所有寬高跟設計都要依樣!!! 要去看看是不是沒算到border padding margin等等 */
+
+/* 共同的標題跟選擇 */
+.store-information h2{
+    font-size: 48px;
+    line-height: 80px;
+    font-weight: 900;
+    border-left: 8px solid #9F1213;
+    height: 70px;
+    padding-left: 16px;
+    margin-bottom: 60px;
+}
+
+/* 選擇分店 */
+.stobase-select h4{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.storedetail-cardbtm h3{
+    font-size: 24px;
+    font-weight: 500;
+    border: 1px solid #00000020;
+    padding: 12px 0 12px 24px;
+    font-weight: bolder;
+}
+
+/* 選擇地區跟下拉式選單結合 */
+.stobase-select{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+select{
+    width: 324px;
+    height: 45px;
+    margin-left: 20px;
+    border: 1px solid #CED4DA;
+}
+
+select option{
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.storebase-detail{
+    border: 1px solid #CED4DA;
+    padding: 16px 0 16px 27px;
+}
+
+.storebase-detail img{
+    width: 20px;
+    height: 20px;  
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+.storebase-detail p{
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+
+
+/* 開始自己的分店內容 */
+.store-information{
+    padding: 96px 0 160px;
+}
+
+/* 分店名 */
+.storedetail-cardbtm h3{
+    font-size: 24px;
+    font-weight: 800;
+    padding: 11px 0 11px 24px;
+}
+
+.stroedetail-content{
+    display: flex;
+}
+
+.storedetail-card{
+    max-width: 445px;
+    margin-right: 30px;
+}
+
+.storedetail-cardtopimg img{
+    width: 100%;
+    height: 224px;
+    /* height: 100%; */
+
+
+    /* 可以讓圖片固定高寬也不會變成!!!!!!!!!!重要!!!!! */
+    object-fit: cover;
+}
+
+/* map */
+.storedetail-map{
+    width: 635px;
+}
+.storedetail-map iframe{
+    /* max-width: 635px; */
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* RWD */
+@media(max-width:1110px){
+    .storedetail-card{
+        max-width: 400px;
+    }
+}
+@media(max-width:880px){
+    .stroedetail-content{
+        flex-wrap: wrap;
+    }
+    .storedetail-card{
+        max-width: 100%;
+        display: flex;
+        margin-right: 0;
+    }
+    .storedetail-cardtopimg{
+        width: 100%;
+        margin-right: 30px;
+    }
+    .storedetail-cardtopimg img{
+        height: 200px;
+    }
+    .storedetail-cardbtm{
+        width: 100%;
+    }
+    .storebase-detail img{
+        width: 17px;
+        height: 17px;
+        margin-top: 5px;
+    }
+    .storebase-detail p{
+        font-size: 16px;
+    }
+    .storedetail-map{
+        width: 100%;
+        height: 422px;
+        margin-top: 38px;
+    }
+}
+
+@media(max-width:787px){
+    .storedetail-cardtopimg img{
+        height: 214px;
+    }
+}
+
+@media(max-width:768px){
+    .store-information{
+        padding: 60px 0 96px;
+    }
+    .store-information h2{
+        margin-bottom: 40px;
+    }
+    .stobase-select{
+        margin-bottom: 24px;
+    }
+
+    .storedetail-cardtopimg img{
+        /* height: 164px; */
+        /* 原本設計文字14px剛好 但網頁預設值只有16px
+        兩邊會不同等 因此直接改變圖片高度 這樣比較好看 */
+        height: 196px;
+    }
+    .storedetail-cardbtm h3{
+        font-size: 16px;
+        padding: 8.5px 0 7.5px 16px;
+    }
+    .storebase-detail{
+        padding: 16px 16px 16px 16px;
+    }
+    .storedetail-map{
+        margin-top: 32px;
+    }
+}
+
+@media(max-width:566px){
+    .storedetail-cardtopimg{
+        margin-right: 15px;
+    }
+}
+
+@media(max-width:551px){
+    .storedetail-card{
+        flex-direction: column;
+        margin: auto;
+    }
+    .storedetail-cardtopimg{
+        margin-right: 0;
+    }
+    .storedetail-map{
+        height: 211px;
+        margin-top: 16px;
+    }
+}
+
+@media(max-width:517px){
+    .stobase-select h4{
+        font-size: 18px;
+    }
+}
+
+@media(max-width:493px){
+    select{
+        width: 280px;
+    }
+}
+
+@media(max-width:449px){
+    select{
+        width: 240px;
+    }
+}
+
+@media(max-width:375px){
+    .store-information{
+        padding: 28px 0 56px;
+    }
+    .store-information h2{
+        font-size: 28px;
+        line-height: 40px;
+        height: 40px;
+        margin-bottom: 24px;
+    }
+    .stobase-select h4{
+        font-size: 16px;
+    }
+    select{
+        width: 268px;
+        margin-left: 12px;
+    }
+    .stobase-select{
+        margin-bottom: 20px;
+    }
+    .storedetail-cardtopimg img{
+        height: 164px;
+    }
+}
+@media(max-width:373px){
+    select{
+        width: 240px;
+    }
+}
+@media(max-width:345px){
+    select{
+        width: 200px;
+    }
+}

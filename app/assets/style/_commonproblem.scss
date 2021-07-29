@@ -1,0 +1,81 @@
+/* 常見問題的CSS */
+
+.commond-problem{
+    padding: 96px 0 160px;
+}
+
+.commond-problem h2{
+    font-size: 48px;
+    line-height: 80px;
+    font-weight: 900;
+    border-left: 8px solid #9F1213;
+    height: 70px;
+    padding-left: 16px;
+    margin-bottom: 60px;
+}
+
+.commond-problem h3{
+    font-size: 32px;
+    line-height: 63px;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+.commonpro-content h4{
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+
+.commonpro-content p{
+    margin-bottom: 32px;
+    padding-left: 95px;
+    text-align: left;
+    font-weight: 500;
+}
+
+
+@media(max-width:768px){
+    .commond-problem{
+        padding: 60px 0 96px;
+    }
+    .commond-problem h2{
+        margin-bottom: 40px;
+    }
+    .commond-problem h3{
+        margin-bottom: 32px;
+    }
+    .commonpro-content p{
+        margin-bottom: 24px;
+    }
+
+}
+
+@media(max-width:414px){
+    .commond-problem{
+        padding: 28px 0 56px;
+    }
+    .commond-problem h2{
+        margin-bottom: 24px;
+        font-weight: 900;
+    }
+    .commond-problem h3{
+        margin-bottom: 24px;
+        font-weight: 500;
+    }
+    .commonpro-content h4{
+        margin-bottom: 8px;
+        font-weight: 900;
+        line-height: 24px;
+    }
+    .commonpro-content p{
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+    /* 這行處理不了 */
+    .commonpro-content .br-bottom{
+        margin-top: 16px;
+    }
+}
