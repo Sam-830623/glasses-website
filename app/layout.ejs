@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="header">
+    <!-- h1通常都會放入logo裡 因為為了搜尋化 -->
+    <!-- h2-h6都是由自己配置 通常都會放重點式 而不是哪一個字很大來決定 -->
+    <h1 class="logo">
+        <a href="./index.html">眼鏡行公司</a>
+    </h1>
+    <ul class="menu">
+        <li><a href="./seriesframe-OP.html">系列鏡框</a></li>
+        <li><a href="./storebase.html">門市據點</a></li>
+        <li><a href="./glasses-blog.html">部落格</a></li>
+        <li><a href="./commonproblem.html">常見問題</a></li>
+    </ul>
+</div>
+
+<div class="main">
+  <%- contents %>
+</div>
+  
+
+<div class="footer">
+  <div class="container">
+      <div class="footer-inner">
+
+          <div class="footer-toptop">
+              <div class="footer-top">
+                  <ul class="footer-menu">
+                      <li><a href="./index.html">首頁</a></li>
+                      <li><a href="./seriesframe-OP.html">系列鏡框</a></li>
+                      <li><a href="./storebase.html">門市據點</a></li>
+                      <li><a href="./glasses-blog.html">部落格</a></li>
+                      <li><a href="./commonproblem.html">常見問題</a></li>
+                  </ul>
+                  <ul class="footer-icon">
+                      <li><a href="#"><img src="./img/footer_fb.svg" alt="facebook"></a></li>
+                      <li><a href="#"><img src="./img/footer_ig.svg" alt="instagram"></a></li>
+                      <li><a href="#"><img src="./img/footer_line.svg" alt="line"></a></li>
+                  </ul>
+              </div>
+              <div class="footer-middle">
+                  <a href="#"><img src="./img/footer-phone.svg" alt="phone"><span>0800-000-000</span></a>
+                  <a href="#"><img src="./img/footer-mail.svg" alt="mail"><span>glasses@business.com</span></a>
+              </div>
+          </div>
+
+          <div class="footer-bottom">
+              <div class="footer-copyright">
+                  Copyright © 2020 Glasses.All rights reserved.
+              </div>
+              <ul class="footer-servicelist">
+                  <li><a href="#">隱私權政策</a></li>
+                  <li><a href="#">服務條款</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
