@@ -1711,4 +1711,1136 @@ input::placeholder {
   .pages-dn .pages a {
     padding: 6px 4px; } }
 
+/* 門市據點的css */
+/* 這邊還是圖片不知道要怎麼讓固定不會跑掉 讓自適應 區塊RWD要加強 */
+.store-base {
+  padding: 96px 0 132px; }
+
+.store-base h2 {
+  font-size: 48px;
+  line-height: 80px;
+  font-weight: 900;
+  border-left: 8px solid #9F1213;
+  height: 70px;
+  padding-left: 16px;
+  margin-bottom: 60px; }
+
+/* 各種店的店名 */
+.storebase-card h3 {
+  font-size: 24px;
+  font-weight: 500;
+  border: 1px solid #00000020;
+  padding: 12px 0 12px 24px;
+  font-weight: bolder; }
+
+/* 選擇地區 */
+.stobase-select h4 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600; }
+
+/* 選擇地區跟下拉式選單結合 */
+.stobase-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px; }
+
+select {
+  width: 324px;
+  height: 45px;
+  margin-left: 20px;
+  border: 1px solid #CED4DA; }
+
+select option {
+  font-size: 18px;
+  line-height: 26px; }
+
+/* 要怎麼讓置中 並且不會讓下面的靠中間來? */
+.storebase-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.storebase-content li {
+  width: 31.5%;
+  margin-right: 30px;
+  margin-bottom: 32px; }
+
+.storebase-content li:nth-child(3) {
+  margin-right: 0; }
+
+.storebase-content li:nth-child(4) {
+  margin-bottom: 0; }
+
+.storebase-content li:last-child {
+  margin-bottom: 0; }
+
+.storebase-card {
+  /* width: 32%; */
+  /* height: 519px; */
+  width: 350px;
+  /* margin-right: 30px; */
+  /* margin-bottom: 32px; */ }
+
+/* 為甚麼一直沒反應??? */
+/* .storebase-card:nth-child(4){
+    margin-bottom: 0;
+}
+
+.storebase-card:last-child{
+    margin-bottom: 0;
+} */
+/* 為甚麼用nth-child會失效? */
+/* .storebase-card:nth-child(3){
+    margin-right: 0;
+} */
+.storebase-card img {
+  width: 100%;
+  height: 224px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.storebase-detail {
+  border: 1px solid #CED4DA;
+  padding: 16px; }
+
+.storebase-detail img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 7px; }
+
+.storebase-detail p {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 8px; }
+
+.detail-inforemation {
+  width: 100%;
+  height: 67px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  display: block;
+  line-height: 67px;
+  font-size: 19px; }
+
+.detail-inforemation a {
+  color: #fff;
+  display: block;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.detail-inforemation a:hover {
+  background-color: #AA0601;
+  color: black;
+  font-weight: 900; }
+
+@media (max-width: 1110px) {
+  .storebase-content li {
+    width: 31.2%;
+    margin-right: 30px; }
+  .storebase-card {
+    width: 100%; } }
+
+@media (max-width: 1015px) {
+  .storebase-content li {
+    width: 31%; }
+  /* .storebase-card img{
+        height: unset;
+    } */ }
+
+@media (max-width: 934px) {
+  .storebase-content li {
+    margin-right: 30px;
+    width: 48%; }
+  .storebase-content li:nth-child(even) {
+    margin-right: 0; }
+  .storebase-content li:nth-child(3) {
+    margin-right: 30px; }
+  .storebase-card .storebase-pictop {
+    width: 100%; }
+  .storebase-content li:nth-child(4) {
+    margin-bottom: 32px; } }
+
+@media (max-width: 827px) {
+  .storebase-content li {
+    width: 47.5%; } }
+
+@media (max-width: 768px) {
+  .store-base {
+    padding: 60px 0 96px; }
+  .store-base h2 {
+    margin-bottom: 40px; }
+  .stobase-select {
+    margin-bottom: 24px; }
+  .storebase-content li {
+    width: 330px; }
+  .storebase-card .storebase-pictop {
+    height: 164px; }
+  .storebase-card h3 {
+    font-size: 16px; }
+  .storebase-detail p {
+    font-size: 16px;
+    line-height: 21px; }
+  .storebase-detail img {
+    margin-top: 1px; }
+  .detail-inforemation {
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px; } }
+
+@media (max-width: 767px) {
+  .storebase-content li {
+    width: 47.5%; } }
+
+@media (max-width: 677px) {
+  .storebase-content li {
+    width: 47%; } }
+
+@media (max-width: 577px) {
+  .storebase-content li {
+    width: 46.5%; }
+  .storebase-card .storebase-pictop {
+    height: unset; } }
+
+@media (max-width: 525px) {
+  .storebase-content li {
+    width: 100%;
+    margin-right: 0; }
+  .storebase-content li:nth-child(3) {
+    margin-right: 0; } }
+
+@media (max-width: 517px) {
+  .stobase-select h4 {
+    font-size: 18px; }
+  select {
+    width: 280px; } }
+
+@media (max-width: 449px) {
+  select {
+    width: 240px; } }
+
+@media (max-width: 375px) {
+  .store-base {
+    padding: 28px 0 56px; }
+  .store-base h2 {
+    font-size: 28px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 24px; }
+  .stobase-select {
+    margin-bottom: 20px; }
+  .stobase-select h4 {
+    font-size: 16px; }
+  select {
+    width: 77%;
+    margin-left: 12px; }
+  .storebase-content li {
+    margin-bottom: 16px; }
+  .storebase-card .storebase-pictop {
+    height: 164px; }
+  .storebase-card h3 {
+    padding: 8px 0 8px 24px; }
+  .storebase-detail {
+    padding: 16px 0 8px 24px; } }
+
+@media (max-width: 359 px) {
+  select {
+    width: 70%; } }
+
+/* 門市據點裡面更細項 */
+/* 所有寬高跟設計都要依樣!!! 要去看看是不是沒算到border padding margin等等 */
+/* 共同的標題跟選擇 */
+.store-information h2 {
+  font-size: 48px;
+  line-height: 80px;
+  font-weight: 900;
+  border-left: 8px solid #9F1213;
+  height: 70px;
+  padding-left: 16px;
+  margin-bottom: 60px; }
+
+/* 選擇分店 */
+.stobase-select h4 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600; }
+
+.storedetail-cardbtm h3 {
+  font-size: 24px;
+  font-weight: 500;
+  border: 1px solid #00000020;
+  padding: 12px 0 12px 24px;
+  font-weight: bolder; }
+
+/* 選擇地區跟下拉式選單結合 */
+.stobase-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px; }
+
+select {
+  width: 324px;
+  height: 45px;
+  margin-left: 20px;
+  border: 1px solid #CED4DA; }
+
+select option {
+  font-size: 18px;
+  line-height: 26px; }
+
+.storebase-detail {
+  border: 1px solid #CED4DA;
+  padding: 16px 0 16px 27px; }
+
+.storebase-detail img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 7px; }
+
+.storebase-detail p {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 8px; }
+
+/* 開始自己的分店內容 */
+.store-information {
+  padding: 96px 0 160px; }
+
+/* 分店名 */
+.storedetail-cardbtm h3 {
+  font-size: 24px;
+  font-weight: 800;
+  padding: 11px 0 11px 24px; }
+
+.stroedetail-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.storedetail-card {
+  max-width: 445px;
+  margin-right: 30px; }
+
+.storedetail-cardtopimg img {
+  width: 100%;
+  height: 224px;
+  /* height: 100%; */
+  /* 可以讓圖片固定高寬也不會變成!!!!!!!!!!重要!!!!! */
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+/* map */
+.storedetail-map {
+  width: 635px; }
+
+.storedetail-map iframe {
+  /* max-width: 635px; */
+  width: 100%;
+  height: 100%; }
+
+/* RWD */
+@media (max-width: 1110px) {
+  .storedetail-card {
+    max-width: 400px; } }
+
+@media (max-width: 880px) {
+  .stroedetail-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .storedetail-card {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 0; }
+  .storedetail-cardtopimg {
+    width: 100%;
+    margin-right: 30px; }
+  .storedetail-cardtopimg img {
+    height: 200px; }
+  .storedetail-cardbtm {
+    width: 100%; }
+  .storebase-detail img {
+    width: 17px;
+    height: 17px;
+    margin-top: 5px; }
+  .storebase-detail p {
+    font-size: 16px; }
+  .storedetail-map {
+    width: 100%;
+    height: 422px;
+    margin-top: 38px; } }
+
+@media (max-width: 787px) {
+  .storedetail-cardtopimg img {
+    height: 214px; } }
+
+@media (max-width: 768px) {
+  .store-information {
+    padding: 60px 0 96px; }
+  .store-information h2 {
+    margin-bottom: 40px; }
+  .stobase-select {
+    margin-bottom: 24px; }
+  .storedetail-cardtopimg img {
+    /* height: 164px; */
+    /* 原本設計文字14px剛好 但網頁預設值只有16px
+        兩邊會不同等 因此直接改變圖片高度 這樣比較好看 */
+    height: 196px; }
+  .storedetail-cardbtm h3 {
+    font-size: 16px;
+    padding: 8.5px 0 7.5px 16px; }
+  .storebase-detail {
+    padding: 16px 16px 16px 16px; }
+  .storedetail-map {
+    margin-top: 32px; } }
+
+@media (max-width: 566px) {
+  .storedetail-cardtopimg {
+    margin-right: 15px; } }
+
+@media (max-width: 551px) {
+  .storedetail-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto; }
+  .storedetail-cardtopimg {
+    margin-right: 0; }
+  .storedetail-map {
+    height: 211px;
+    margin-top: 16px; } }
+
+@media (max-width: 517px) {
+  .stobase-select h4 {
+    font-size: 18px; } }
+
+@media (max-width: 493px) {
+  select {
+    width: 280px; } }
+
+@media (max-width: 449px) {
+  select {
+    width: 240px; } }
+
+@media (max-width: 375px) {
+  .store-information {
+    padding: 28px 0 56px; }
+  .store-information h2 {
+    font-size: 28px;
+    line-height: 40px;
+    height: 40px;
+    margin-bottom: 24px; }
+  .stobase-select h4 {
+    font-size: 16px; }
+  select {
+    width: 268px;
+    margin-left: 12px; }
+  .stobase-select {
+    margin-bottom: 20px; }
+  .storedetail-cardtopimg img {
+    height: 164px; } }
+
+@media (max-width: 373px) {
+  select {
+    width: 240px; } }
+
+@media (max-width: 345px) {
+  select {
+    width: 200px; } }
+
+/* 這邊的768px太尷尬太醜 我只好改成這樣了 */
+/* blog-menu */
+.glassblog-nav {
+  background-color: #650300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.blog-navinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0; }
+
+.blog-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.blog-menu a {
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  display: block; }
+
+/* 最上面列表的hover */
+.blog-menu a:hover {
+  background-color: white;
+  color: #650300;
+  font-weight: 800;
+  font-size: 18px; }
+
+.glassblog {
+  margin: 40px 0 160px; }
+
+.glassblog h2 {
+  font-size: 48px;
+  line-height: 80px;
+  font-weight: 900;
+  border-left: 8px solid #9F1213;
+  height: 70px;
+  padding-left: 16px;
+  margin-bottom: 60px; }
+
+.blog-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 60px; }
+
+.blog-inner:last-child {
+  margin-bottom: 0; }
+
+.blog-innerimg {
+  /* width: 58%; */
+  width: 635px;
+  margin-right: 30px; }
+
+.blog-innerimg img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+/* 右邊的文字 */
+.blog-text {
+  width: 40%; }
+
+.blogtext-top {
+  margin-bottom: 24px; }
+
+/* 不能這樣寫  因為都放在一起的話 全部class都會放在一起會覆蓋掉 所以最好方法是前面寫自定class再h3比較好 */
+.blog-text h3 {
+  font-size: 32px;
+  line-height: 63px;
+  font-weight: 800;
+  color: #650300; }
+
+.blog-text h3 a {
+  color: #650300; }
+
+.blog-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.blog-subtitle h4 {
+  font-size: 20px;
+  font-weight: 800; }
+
+.blog-subtitle h5 {
+  font-size: 16px;
+  color: rgba(85, 85, 85, 0.7); }
+
+.blog-subtitle h4 a {
+  color: black; }
+
+.blog-subtitle h5 a {
+  color: rgba(85, 85, 85, 0.7); }
+
+/* 做這個是為了讓more可以到底 */
+.blogtext-bottom {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+/* 只能先用19 不然太多會超出 */
+.blogtext-bottom p {
+  /* font-size: 20px; */
+  font-size: 19px;
+  color: #555555; }
+
+.blogtext-bottom p a {
+  color: #555555; }
+
+/* more */
+/* 有沒有更好辦法讓more靠到最底?*/
+.blogtext-bottom span {
+  font-size: 36px;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.blogtext-bottom span a {
+  color: #650300; }
+
+/* 最下面的pages */
+.pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 96px; }
+
+.pages a {
+  font-size: 18px;
+  line-height: 27px;
+  color: #555555;
+  border: 0.5px solid #555555;
+  padding: 12px 16px; }
+
+.pages a:hover {
+  background: #000;
+  color: #fff; }
+
+.pages .bg-grey {
+  background-color: #F2F2F2; }
+
+@media (max-width: 1110px) {
+  .blog-innerimg {
+    width: 63%; }
+  .blog-innerimg img {
+    height: unset; }
+  .blog-text {
+    width: 37%; }
+  .blogtext-bottom p {
+    font-size: 18px; }
+  .blogtext-bottom span {
+    font-size: 26px; } }
+
+@media (max-width: 1012px) {
+  .blog-innerimg {
+    width: 53%; }
+  .blog-text {
+    width: 45%; }
+  .blogtext-bottom p {
+    font-size: 16px; }
+  .blogtext-bottom {
+    height: unset; } }
+
+@media (max-width: 980px) {
+  .blog-text h3 {
+    font-size: 28px; }
+  .blog-subtitle h4 {
+    font-size: 18px; }
+  .blogtext-bottom span {
+    font-size: 20px;
+    position: relative;
+    bottom: 26px; }
+  .blogtext-bottom span a {
+    color: #555555;
+    /* MORE變成more!!!!!!! */
+    text-transform: lowercase; } }
+
+@media (max-width: 909px) {
+  .blog-text h3 {
+    font-size: 22px;
+    line-height: 36px; }
+  .blogtext-bottom span {
+    font-size: 16px; } }
+
+@media (max-width: 879px) {
+  .blogtext-bottom span {
+    position: relative;
+    bottom: 10px; } }
+
+@media (max-width: 817px) {
+  .blog-menu li {
+    margin-right: 32px; } }
+
+@media (max-width: 768px) {
+  .blog-menu a {
+    font-size: 16px; }
+  .glassblog {
+    margin: 32px 0 96px; }
+  .glassblog h2 {
+    margin-bottom: 32px; }
+  .blog-subtitle h4 {
+    font-size: 16px; }
+  .blogtext-top {
+    margin-bottom: 12px; }
+  .blog-innerimg img {
+    height: 92%; } }
+
+@media (max-width: 687px) {
+  .blog-menu li {
+    font-size: 16px;
+    margin-right: 32px; } }
+
+@media (max-width: 630px) {
+  .blog-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px; }
+  .blog-innerimg {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px; }
+  .blog-text {
+    width: 100%; }
+  .blog-subtitle h5 {
+    color: #000; }
+  .blog-subtitle h5 a {
+    color: #000; } }
+
+@media (max-width: 501px) {
+  .blog-navinner {
+    display: none; } }
+
+@media (max-width: 481px) {
+  .blog-menu li {
+    margin-right: 12px; } }
+
+@media (max-width: 474px) {
+  .pages a {
+    font-size: 17px;
+    padding: 10px 12px; } }
+
+@media (max-width: 414px) {
+  .glassblog {
+    margin: 28px 0 56px; }
+  .glassblog h2 {
+    font-size: 28px;
+    margin-bottom: 28px;
+    height: 40px;
+    line-height: 40px; }
+  .blogtext-bottom {
+    display: none; } }
+
+@media (max-width: 375px) {
+  .glassblognavv .blog-navinner {
+    display: none; }
+  .blog-text h3 {
+    font-size: 18px; }
+  .blog-subtitle h4 {
+    font-size: 16px; } }
+
+@media (max-width: 361px) {
+  .pages a {
+    font-size: 16px;
+    padding: 10px 8px; } }
+
+/* blog-menu */
+.glassblog-nav {
+  background-color: #650300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.blog-navinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0; }
+
+.blog-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.blog-menu a {
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  display: block; }
+
+.blog-menu li {
+  margin-right: 48px; }
+
+/* 最上面列表的hover */
+.blog-menu a:hover {
+  background-color: white;
+  color: #650300;
+  font-weight: 800;
+  font-size: 18px; }
+
+/* 情人特別企劃內容 */
+.VT-special {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px 0 160px; }
+
+.VT-special-content {
+  width: 825px;
+  margin-right: 30px; }
+
+.VT-special-tags {
+  width: 22.8%; }
+
+.VT-special-content p span {
+  color: #AA0601; }
+
+.VT-special-content h5 span {
+  color: #AA0601;
+  font-size: 24px;
+  font-weight: 900; }
+
+.VT-special-content h2 span {
+  font-size: 48px;
+  line-height: 95px;
+  font-weight: 900; }
+
+.VT-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px; }
+
+.VT-subtitle h3 {
+  font-size: 28px;
+  font-weight: 600; }
+
+.VT-subtitle p {
+  color: #6C6C6C;
+  font-weight: 600; }
+
+/* 中間的內文 */
+.VTspecial-text img {
+  width: 100%;
+  height: 472px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 24px; }
+
+/* .VTspecial-text img:nth-child(1){
+    height: 539px;
+} */
+.VTspecial-text p {
+  font-size: 20px;
+  color: rgba(10, 10, 10, 0.6);
+  font-weight: 600;
+  margin-bottom: 40px; }
+
+/* 最底下的icon 跟 頁面 */
+.VTspecial-bottom {
+  font-size: 20px;
+  font-weight: 900; }
+
+.VTspecial-bottom p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #000;
+  margin-top: 10px; }
+
+.VTspecial-bottom p a {
+  margin-left: 16px; }
+
+.VTspecial-bottom p img {
+  width: 24px;
+  height: 24px; }
+
+.VTspecial-pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.VTspecial-pages a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 19px;
+  line-height: 30px;
+  color: #000;
+  padding-top: 24px; }
+
+/* 右邊的tags */
+.VT-special-tags {
+  color: #AA0601;
+  font-weight: 900;
+  margin-top: 82px; }
+
+.VT-special-tagstitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.VT-special-tagstitle img {
+  width: 38px;
+  height: 28px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.VT-special-tagstitle h4 {
+  font-size: 28px; }
+
+.VT-special-tags p {
+  font-size: 24px; }
+
+/* 手機板tags變化 */
+.VT-special-551pxtags {
+  display: none;
+  color: #AA0601;
+  font-weight: 900;
+  margin-top: 30px; }
+
+@media (max-width: 1109px) {
+  .VT-special-content {
+    width: 70%; }
+  .VT-special-tags {
+    width: 23%; }
+  .VTspecial-text img {
+    height: unset; } }
+
+@media (max-width: 1029px) {
+  .VT-special-tagstitle h4 {
+    font-size: 20px;
+    line-height: 42px; }
+  .VT-special-tags p {
+    font-size: 16px; } }
+
+@media (max-width: 768px) {
+  .VT-special {
+    margin: 8px 0 96px; }
+  .VT-special-content {
+    width: 510px; }
+  .VT-special-tags {
+    width: 20%; }
+  .VT-special-content h5 span {
+    font-size: 16px;
+    line-height: 36px; }
+  .VT-special-content h2 span {
+    font-size: 32px;
+    line-height: 36px; }
+  .VT-subtitle h3 {
+    font-size: 16px; }
+  .VTspecial-text img {
+    height: 292px;
+    margin-bottom: 16px; }
+  .VTspecial-text p {
+    font-size: 16px;
+    margin-bottom: 24px; }
+  .VTspecial-bottom {
+    font-size: 16px;
+    line-height: 30px; }
+  .VTspecial-pages a {
+    font-size: 16px;
+    padding-top: 20px;
+    line-height: 30px; } }
+
+@media (max-width: 760px) {
+  .VT-special-content {
+    width: 70%; }
+  .VT-specia {
+    width: 30%; }
+  .VTspecial-text img {
+    height: unset; } }
+
+@media (max-width: 676px) {
+  .VTspecial-bottom p {
+    padding-bottom: 16px; }
+  .VTspecial-pages {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .VTspecial-pages a {
+    padding-top: 8px; } }
+
+@media (max-width: 633px) {
+  .blog-menu a {
+    font-size: 16px; }
+  .blog-menu li {
+    margin-right: 25px; }
+  .VT-special-content {
+    width: 60%; } }
+
+@media (max-width: 551px) {
+  .VT-special {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .VT-special-content {
+    width: 100%;
+    margin-right: 0; }
+  .VT-special-tags {
+    width: 100%;
+    display: none; }
+  .VT-special-551pxtags {
+    display: block; } }
+
+@media (max-width: 473px) {
+  .blog-navinner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .blog-navinner p {
+    display: none; }
+  .blog-menu li:last-child {
+    margin-right: 0; } }
+
+@media (max-width: 384px) {
+  .blog-menu a:hover {
+    font-size: 16px; } }
+
+@media (max-width: 377px) {
+  .blog-menu li {
+    margin-right: 12px; } }
+
+@media (max-width: 375px) {
+  .blog-menu li {
+    margin-right: 24px; }
+  .VT-special {
+    margin: 8px 0 56px; }
+  .VT-special-content h2 span {
+    font-size: 24px;
+    line-height: 30px; }
+  .VT-subtitle {
+    margin-bottom: 20px; }
+  .VTspecial-text img {
+    height: 225px; }
+  .VT-special-tags {
+    margin-top: 30px; } }
+
+@media (max-width: 373px) {
+  .blog-menu li {
+    margin-right: 18px; } }
+
+@media (max-width: 355px) {
+  .blog-menu li {
+    margin-right: 10px; } }
+
+@media (max-width: 331px) {
+  .blog-menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .blog-menu li {
+    margin-right: 32px; } }
+
+/* 常見問題的CSS */
+.commond-problem {
+  padding: 96px 0 160px; }
+
+.commond-problem h2 {
+  font-size: 48px;
+  line-height: 80px;
+  font-weight: 900;
+  border-left: 8px solid #9F1213;
+  height: 70px;
+  padding-left: 16px;
+  margin-bottom: 60px; }
+
+.commond-problem h3 {
+  font-size: 32px;
+  line-height: 63px;
+  font-weight: bold;
+  margin-bottom: 36px; }
+
+.commonpro-content h4 {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 900;
+  margin-bottom: 16px; }
+
+.commonpro-content p {
+  margin-bottom: 32px;
+  padding-left: 95px;
+  text-align: left;
+  font-weight: 500; }
+
+@media (max-width: 768px) {
+  .commond-problem {
+    padding: 60px 0 96px; }
+  .commond-problem h2 {
+    margin-bottom: 40px; }
+  .commond-problem h3 {
+    margin-bottom: 32px; }
+  .commonpro-content p {
+    margin-bottom: 24px; } }
+
+@media (max-width: 414px) {
+  .commond-problem {
+    padding: 28px 0 56px; }
+  .commond-problem h2 {
+    margin-bottom: 24px;
+    font-weight: 900; }
+  .commond-problem h3 {
+    margin-bottom: 24px;
+    font-weight: 500; }
+  .commonpro-content h4 {
+    margin-bottom: 8px;
+    font-weight: 900;
+    line-height: 24px; }
+  .commonpro-content p {
+    padding-left: 0;
+    margin-bottom: 20px; }
+  /* 這行處理不了 */
+  .commonpro-content .br-bottom {
+    margin-top: 16px; } }
+
 /*# sourceMappingURL=all.css.map */
